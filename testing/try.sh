@@ -1,8 +1,8 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 readonly PROLAMB_URL=""
 
-TARGET=`cat << EOF | base64
+TARGET=`base64 -w0 - << EOF
 {
   "name": "test",
   "type": "http",
